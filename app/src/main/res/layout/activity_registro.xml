@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ABEBC6"
+    tools:context=".Registro">
+
+    <TextView
+        android:id="@+id/textVTitleReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="56dp"
+        android:text="Datos de Usuario:"
+        android:textColor="#006064"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvusuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="41dp"
+        android:text="Contraseña"
+        android:textColor="#006064"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextUserName" />
+
+    <TextView
+        android:id="@+id/tvusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="62dp"
+        android:text="Usuario"
+        android:textColor="#006064"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVTitleReg" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="306dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="62dp"
+        android:backgroundTintMode="src_in"
+        android:ems="10"
+        android:hint="Ingrese una nueva contraseña"
+        android:inputType="textPassword"
+        android:textColor="#006064"
+        app:layout_constraintBottom_toTopOf="@+id/ImgBtnSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContraseña" />
+
+    <EditText
+        android:id="@+id/editTextTextUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:backgroundTint="@color/teal_700"
+        android:backgroundTintMode="src_in"
+        android:ems="10"
+        android:hint="Ingrese su Usuario"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewContraseña"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/textViewContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/tvusuario" />
+
+    <Button
+        android:id="@+id/ImgBtnSave"
+        android:layout_width="188dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="142dp"
+        android:onClick="Registrarse"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

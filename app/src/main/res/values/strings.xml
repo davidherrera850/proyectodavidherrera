@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">El mundo de Harry Potter</string>
+    <string name="item1">Settings</string>
+    <string name="item2">Share</string>
+    <string name="item3">Musica</string>
+    <string-array name="pais">
+        <item>España</item>
+        <item>Francia</item>
+        <item>Alemania</item>
+    </string-array>
+    <string-array name="codigopais">
+        <item>Esp</item>
+        <item>FRA</item>
+        <item>ALE</item>
+    </string-array>
+</resources>
